@@ -6,7 +6,11 @@ from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQu
 # ==============================================================================
 # CONFIGURACIÓN
 # ==============================================================================
-TOKEN_TELEGRAM = "7967185957:AAFTl0q2GoQ0WHkZBQqmFWLz_OjlsiqKnFs"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN_TELEGRAM = os.getenv("TOKEN_TELEGRAM")
 CARPETA_DESCARGAS = "./descargas_mp3"
 # ==============================================================================
 
